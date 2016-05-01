@@ -1,0 +1,154 @@
+/*!
+Theme Name: superslim
+Author: James Shults
+Author URI: http://jamesshults.com
+Version: 1.0
+*/
+
+// Reference for git.
+
+// On local development:
+// Navigate to theme directory.
+// If first time, run command: git init
+// Run command: git add .
+// Run command: git commit -m "Your comment"
+// If first time, run command: git remote add origin remote-repository-URL
+// git push origin master
+
+// On server
+// Run command: ssh {username}@nimlok-pittsburgh.com
+// Navigate to theme directory.
+// If first time, run command: git clone remote-repository-URL
+// If making updates, navigate inside theme directory and run command: git pull
+
+// use this for quick reference on sass and wordpress http://www.elegantthemes.com/blog/tips-tricks/how-to-use-sass-with-wordpress-a-step-by-step-guide
+// First, be sure you've included config.rb in theme directory, start command prompt, change the directory to the theme, then run this command:
+
+// compass watch --output-style compressed
+
+// use this for quick reference on browsersync http://www.browsersync.io/#install
+// install browsersync: run command "npm install -g browser-sync"
+// start browsersync: first have local site already up, then in command prompt, change directory to the local site's root directory, then run command:
+
+// browser-sync start --proxy "localhost/nimlok-pittsburgh.com" --files "wp-content/themes/nimlok-pittsburgh/style.css"
+
+@import "compass";
+@import "compass/reset";
+
+// Here we import our partials
+@import "_partials/mixins";
+@import "_partials/variables";
+@import "_partials/typography";
+@import "_partials/main_menu";
+//@import "_partials/mobile_menu";
+@import "_partials/mobile_menu_push_from_right";
+
+body {
+	font-family: $font-family;
+	font-size: $font-size;
+	color: $font-color;
+}
+
+p {
+	font-family: $font-family;
+	font-size: $font-size;
+	color: $font-color;
+}
+
+.clear {
+	clear: both;
+}
+
+/* forms start */
+
+/*
+.myFormText {
+	width: 100%;
+	color: $font-color;
+	background: #f4f4f4;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.myFormText:focus {
+	border: none;
+	outline: none;
+}
+
+.myFormTextArea {
+	width: 100%;
+	height: 149px;
+	color: $font-color;
+	background: #f4f4f4;
+	border: none;
+	border-radius: 3px;
+	padding: 5px;
+}
+
+.myFormTextArea:focus {
+	border: none;
+	outline: none;
+}
+
+.myFormSubmit {
+	font-family: $font-family;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: $primary-color;
+	background: #f3f3f3;
+	border-radius: 3px;
+	border: 1px solid #e5e5e5;
+	padding: 4px 10px;
+}
+
+.myFormSubmit:focus {
+	outline: none;
+	border: $primary-color;
+}
+
+.myFormSubmit:hover {
+	border: 1px solid $primary-color;
+}
+
+p.form {
+	font-weight: 600;
+	text-transform: uppercase;
+	color: #135185;
+	margin: 0 0 20px 0!important;
+}
+
+.wpcf7-response-output {
+  border-radius: 3px;
+  margin: 0 0 20px 0!important;
+}
+
+.wpcf7-response-output, div.wpcf7-response-output {
+  border-radius: 3px;
+  margin: 20px 0 !important;
+}
+
+div.wpcf7-mail-sent-ok {
+  line-height: 16px;
+  padding: 10px !important;
+}
+
+.wpcf7-validation-errors {
+  line-height: 16px;
+  border: 1px solid #f7e700 !important;
+  padding: 10px !important;
+}
+
+.wpcf7-mail-sent-ng {
+  line-height: 16px;
+  border: 1px solid #ff0000 !important;
+  border-radius: 3px;
+  padding: 10px !important;
+}
+*/
+
+/* forms end */
+
+//@include respond-to(small) {}
+//@include respond-to(medium) {}
+//@include respond-to(large) {}

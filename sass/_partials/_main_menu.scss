@@ -1,0 +1,61 @@
+/* start main menu */
+
+.mainMenu  {
+	position: relative;
+	z-index: 1;
+	float: left;
+	width: auto;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	a {
+		display: block;
+		font-size: 13px;
+		font-family: arial;
+		text-decoration: none;
+		list-style-type: none;
+		text-decoration: none;
+		color: #333333;
+		background: #cccccc;
+		border-right: 1px solid white;
+		padding: 20px 30px;
+		&:hover {
+			color: #ffffff;
+			background: #999999;
+		}
+	}
+	li {
+		position: relative;
+		float: left;
+	}
+	li ul {
+		position: absolute;
+		display: none;
+		width: 150px;
+		list-style-type: none;
+		&:hover > ul {
+			display: block;
+		}
+	}
+	li ul li {
+		position: relative;
+		float: none;
+		left: -40px;
+	}
+	li ul li a {
+		width: 150px;
+		background: rgb(230, 230, 210);
+		white-space: nowrap;
+		padding: 0 0 0 30px;
+	}
+	li ul li ul {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 145px;
+		width: 150px;
+		background: #000000;
+	}
+}
+
+/* end main menu */

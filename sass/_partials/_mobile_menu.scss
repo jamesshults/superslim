@@ -1,0 +1,144 @@
+/* start mobile menu */
+
+.mainMenuMobileSuperContainer {
+	display: table;
+	width: 100%;
+	margin: 15px 0;
+}
+
+.mainMenuMobileContainer {
+	display: table-row;
+	width: 100%;
+	height: 45px;
+	padding: 20px 0;
+}
+
+.logoContainer {
+	display: table-cell;
+}
+
+.toggleContainer {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.mobileLogo {
+	float: left;
+	padding: 0 0 0 15px;
+}
+
+.bar {
+	height: 1px;
+	background: #ffffff;
+	margin: 6px 3px;
+}
+
+.toggle {
+	float: right;
+	width: 45px;
+	background: $primary-color;
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 7px;
+	margin: 0 15px;
+	&:hover {
+		background: #ffffff;
+		border: 1px solid $primary-color;
+		.bar {
+			background: $primary-color;
+		}
+	}
+}
+
+.mainMenuMobile {
+	display: none;
+	background: $primary-color;
+	width: 100%;
+	list-style-type: none;
+	border-bottom: 1px solid $primary-color;
+	padding: 0;
+	margin: 0;
+	li a {
+		display: block;
+		font-size: 18px;
+		font-weight: 500;
+		text-decoration: none;
+		color: #ffffff;
+		padding: 10px 20px;
+		&:hover {
+			text-decoration: none;
+			color: #333333;
+			background: $secondary-color;
+		}
+	}
+	li.current_page_item > a {
+		color: #333333;
+		background: $secondary-color;
+	}
+	li ul {
+		display: none;
+		list-style-type: none;
+		padding: 0;
+	}
+	li ul li a {
+		padding: 10px 0 10px 40px;
+	}
+	li ul li ul {
+		display: none;
+		list-style-type: none;
+		padding: 0;
+	}
+	li ul li ul li a {
+		padding: 0 0 0 80px;
+	}
+}
+
+.hoverBG {
+	color: #ffffff!important;
+	background: #313843;
+}
+
+.visibleUL {
+	display: block!important;
+}
+
+.triangleContainer {
+	float: right;
+	width: 45px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	margin: 0 15px 0 0;
+}
+
+.triangleClosed {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 7.5px 0 7.5px 10px;
+	border-color: transparent transparent transparent #ffffff;
+	line-height: 0px;
+	_border-color: #000000 #000000 #000000 #ffffff;
+	_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+	margin: 15px auto 0 auto;
+}
+
+.triangleOpen {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 7.5px 0 7.5px;
+	border-color: #ffffff transparent transparent transparent;
+	line-height: 0;
+	_border-color: #ffffff #000000 #000000 #000000;
+	_filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
+	margin: 17px auto 0 auto;
+}
+
+.border {
+	width: 100%;
+	height: 1px;
+	background: $primary-color;
+}
+
+/* end mobile menu */

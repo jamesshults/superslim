@@ -1,0 +1,235 @@
+/* start mobile menu */
+
+.mainMenuMobileSuperContainer {
+	display: table;
+	width: 100%;
+	margin: 15px 0;
+}
+
+.mainMenuMobileContainer {
+	display: table-row;
+	width: 100%;
+	height: 45px;
+	padding: 20px 0;
+}
+
+.logoContainer {
+	display: table-cell;
+}
+
+.toggleContainer {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.mobileLogo {
+	float: left;
+	padding: 0 0 0 15px;
+}
+
+.cbp-spmenu {
+  background: $primary-color;
+  position: fixed;
+  h3 {
+    color: $secondary-color;
+    font-size: 1.9em;
+    padding: 20px;
+    margin: 0;
+    font-weight: 300;
+    background: $primary-color;
+  }
+  a {
+    display: block;
+    color: $secondary-color;
+    font-size: 1.1em;
+    font-weight: 300;
+    &:hover {
+      background: lighten( $primary-color, 10% );
+    }
+    &:active {
+      background: lighten( $primary-color, 10% );
+    }
+  }
+}
+
+/* Orientation-dependent styles for the content of the menu */
+.cbp-spmenu-vertical {
+  width: 240px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  overflow-y: scroll;
+  a {
+    color: #ffffff;
+    border-bottom: 1px solid lighten( $primary-color, 5% );
+    padding: 1em;
+  }
+}
+
+.cbp-spmenu-horizontal {
+  width: 100%;
+  height: 150px;
+  left: 0;
+  z-index: 1000;
+  overflow: hidden;
+  h3 {
+    height: 100%;
+    width: 20%;
+    float: left;
+  }
+  a {
+    float: left;
+    width: 20%;
+    padding: 0.8em;
+    border-left: 1px solid #258ecd;
+  }
+}
+
+/* Vertical menu that slides from the left or right */
+.cbp-spmenu-left {
+  left: -240px;
+}
+
+.cbp-spmenu-right {
+  right: -240px;
+}
+
+.cbp-spmenu-left.menu-open {
+  left: 0px;
+}
+
+.cbp-spmenu-right.menu-open {
+  right: 0px;
+}
+
+/* Horizontal menu that slides from the top or bottom */
+
+.cbp-spmenu-top {
+  top: -150px;
+}
+
+.cbp-spmenu-bottom {
+  bottom: -150px;
+}
+
+.cbp-spmenu-top.menu-open {
+  top: 0px;
+}
+
+.cbp-spmenu-bottom.menu-open {
+  bottom: 0px;
+}
+
+/* Push classes applied to the body */
+.push-body {
+  overflow-x: hidden;
+  position: relative;
+  left: 0;
+}
+
+.push-body-toright {
+  left: 240px;
+}
+
+.push-body-toleft {
+  left: -240px;
+}
+
+/* Transitions */
+.cbp-spmenu,
+.push-body {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 55.1875em) {
+
+  .cbp-spmenu-horizontal {
+    font-size: 75%;
+    height: 110px;
+  }
+
+  .cbp-spmenu-top {
+    top: -110px;
+  }
+
+  .cbp-spmenu-bottom {
+    bottom: -110px;
+  }
+
+}
+
+@media screen and (max-height: 26.375em) {
+
+  .cbp-spmenu-vertical {
+    font-size: 90%;
+    width: 190px;
+  }
+
+  .cbp-spmenu-left,
+  .push-body-toleft {
+    left: -190px;
+  }
+
+  .cbp-spmenu-right {
+    right: -190px;
+  }
+
+  .push-body-toright {
+    left: 190px;
+  }
+
+}
+
+.toggle {
+  float: right;
+	width: 45px;
+	background: $primary-color;
+	border: 1px solid #ffffff;
+	border-radius: 3px;
+	cursor: pointer;
+	padding: 7px;
+	margin: 0 15px;
+  &:hover {
+		background: #ffffff;
+		border: 1px solid $primary-color;
+		.bar {
+			background: $primary-color;
+		}
+	}
+}
+
+.bar {
+  width: 100%;
+  height: 3px;
+  background: #ffffff;
+  margin: 5px 0;
+}
+
+.menuHeader {
+  width: 100%;
+  background: #0d77b6;
+  h3 {
+    display: table-cell;
+    height: 50px;
+    vertical-align: middle;
+    background: none;
+    padding: 0 20px;
+  }
+}
+
+.mobile ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li a {
+    text-decoration: none;
+    padding: 15px 0 15px 20px;
+  }
+  li ul li a {
+    padding: 15px 0 15px 40px;
+  }
+}
+
+/* end mobile menu */

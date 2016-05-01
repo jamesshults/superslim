@@ -1,0 +1,26 @@
+{
+  "name": "superslim",
+  "version": "1.0.0",
+  "description": "A minimilist WordPress starter them with Gulp and Sass.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jamesshults/superslim.git"
+  },
+  "keywords": [
+    "WordPress",
+    "Sass",
+    "Gulp",
+    "Theme",
+    "Minimalist"
+  ],
+  "author": "James Shults",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamesshults/superslim/issues"
+  },
+  "homepage": "https://github.com/jamesshults/superslim#readme"
+}
