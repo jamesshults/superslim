@@ -1,7 +1,8 @@
-# superslim
-A minimilist WordPress starter theme with Gulp and Sass
+<h1>superslim</h1>
 
-For use with local development:
+<h2>A minimilist WordPress starter theme with Gulp, Sass, Compass, Browsersync and more.</h2>
+
+<strong>For use with local development:</strong>
 	
 In sass/style.scss, change theme header information to your theme information and change theme root directory name to your theme name.
 
