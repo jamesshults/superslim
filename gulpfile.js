@@ -20,7 +20,7 @@ gulp.task('browser-sync', function() {
     //initialize browsersync
     browserSync.init(files, {
     //browsersync with a php server
-    proxy: "localhost/nimlok-pittsburgh.com",
+    proxy: "localhost/domain.com",
     notify: false
     });
 });
