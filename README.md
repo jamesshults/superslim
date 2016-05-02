@@ -3,9 +3,9 @@ A minimilist WordPress starter theme with Gulp and Sass
 
 For use with local development:
 	
-Change theme header information to your theme information and hange theme root directory to your theme name.
+In sass/style.scss, change theme header information to your theme information and change theme root directory name to your theme name.
 
-In gulpfile.js, change "localhost/domain.com" to the theme's root directory name for your project.
+In gulpfile.js, change the text "localhost/domain.com" to the theme's root directory name for your project.
 
 In command line tool, navigate to theme root and run command "npm init" then answer the on-screen questions which will set up the package.json file.
 
