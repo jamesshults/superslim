@@ -4,6 +4,8 @@
 
 <strong>For use with local development:</strong>
 
+Install Node if it isn't already by visiting <a href="http://nodejs.org/" target="_blank">http://nodejs.org/</a>.
+
 Install Gulp globally if it isn't already. In command line, run "npm install -g gulp".
 	
 In sass/style.scss, change theme header information to your theme information and change theme root directory name to your theme name.
