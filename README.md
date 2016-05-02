@@ -1,6 +1,6 @@
 <h1>superslim</h1>
 
-<h2>A minimilist WordPress starter theme with Gulp, Sass, Compass, Browsersync and more.</h2>
+<h2>A minimalist WordPress starter theme with Gulp, Sass, Compass, Browsersync and more.</h2>
 
 <strong>For use with local development:</strong>
 
