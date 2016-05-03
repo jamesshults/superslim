@@ -30,20 +30,20 @@ Version: 1.0
 // install browsersync: run command "npm install -g browser-sync"
 // start browsersync: first have local site already up, then in command prompt, change directory to the local site's root directory, then run command:
 
-// browser-sync start --proxy "localhost/nimlok-pittsburgh.com" --files "wp-content/themes/superslim/style.css"
+// browser-sync start --proxy "localhost/superslim" --files "wp-content/themes/superslim/style.css"
 
 @import "compass";
 @import "compass/reset";
 
 // Here we import our partials
 @import "_partials/mixins";
-@import "_partials/variables";
 @import "_partials/layout";
+@import "_partials/variables";
 @import "_partials/typography";
 @import "_partials/main_menu";
 //@import "_partials/mobile_menu";
 @import "_partials/mobile_menu_push_from_right";
-@import "_partials/forms";
+//@import "_partials/forms";
 
 //@include respond-to(small) {}
 //@include respond-to(medium) {}

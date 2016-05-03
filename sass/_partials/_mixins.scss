@@ -1,5 +1,5 @@
 
-/* start media queries */
+/* media queries start */
 
 @mixin respond-to($breakpoint) {
   @if $breakpoint == "small" {
@@ -21,4 +21,4 @@
   }
 }
 
-/* end media queries */
+/* media queries end */
