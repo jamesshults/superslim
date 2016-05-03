@@ -4,7 +4,7 @@
 
 <strong>For use with local development:</strong>
 
-Install Node if it isn't already by visiting <a href="http://nodejs.org/" target="_blank">http://nodejs.org/</a>.
+Install Node if it isn't already by visiting <a href="http://nodejs.org/">http://nodejs.org/</a>.
 
 Install Gulp globally if it isn't already. In command line, run "npm install -g gulp".
 
