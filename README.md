@@ -10,7 +10,7 @@ Install Gulp globally if it isn't already. In command line, run "npm install -g 
 
 In sass/style.scss, change theme header information to your theme information and change theme root directory name to your theme name.
 
-In gulpfile.js, change the text "localhost/domain.com" to the theme's root directory name for your project.
+In gulpfile.js, change the text "localhost/superslim" to the theme's root directory name for your project.
 
 In command line, navigate to theme root and run command "npm init" then answer the on-screen questions which will set up the package.json file.
 
