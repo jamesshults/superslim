@@ -11,6 +11,7 @@ $(".toggle").click(function() {
     });
 });
 
+// add dropdown indicator where needed
 $(".mainMenuMobile li:has(ul)").prepend("<div class='triangleContainer'><div class='triangle triangleClosed'></div></div>");
 
 $(".triangleContainer").click(function() {
