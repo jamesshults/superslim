@@ -1,6 +1,4 @@
 
-/* media queries start */
-
 @mixin respond-to($breakpoint) {
   @if $breakpoint == "small" {
     @media (min-width: 767px) {
@@ -20,5 +18,3 @@
     }
   }
 }
-
-/* media queries end */

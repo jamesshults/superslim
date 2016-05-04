@@ -37,9 +37,10 @@ Version: 1.0
 
 // Here we import our partials
 @import "_partials/mixins";
-@import "_partials/layout";
 @import "_partials/variables";
 @import "_partials/typography";
+
+@import "_partials/layout";
 @import "_partials/main_menu";
 //@import "_partials/mobile_menu";
 @import "_partials/mobile_menu_push_from_right";
